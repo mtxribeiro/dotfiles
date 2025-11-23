@@ -1,0 +1,32 @@
+anchor = bottom
+width = 60%
+horizontal = true
+height = 30
+
+# Padding
+padding-top =  9
+padding-bottom = 0
+padding-left = 8
+padding-right = 0
+
+font-size = 9
+font = JetBrainsMono Nerd Font Bold
+min-input-width = 120
+result-spacing = 15
+
+background-color = #00000000
+
+prompt-text = "Search: "
+prompt-color = #FFFFFF
+
+input-color = #FFFFFF
+input-background-padding = 3
+
+default-result-color = #FFFFFF
+
+selection-color = #FFFFFF
+selection-match-color = #FFFFFF
+
+border-width = 0
+
+outline-width = 0
