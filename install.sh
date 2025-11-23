@@ -9,7 +9,7 @@ set xdg_pkgs xdg-desktop-portal-hyprland xdg-user-dirs
 set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd
 set media_pkgs mpv imv ffmpeg pavucontrol
-set tools_pkgs base-devel zip unzip unrar flatpak fastfetch
+set tools_pkgs base-devel zip unzip unrar flatpak
 set gui_pkgs hyprland hyprpaper waybar materia-gtk-theme
 set softwares_pkgs firefox ghostty pcmanfm
 
@@ -22,7 +22,7 @@ if not type -q paru
     cd /tmp/paru; makepkg -si --noconfirm; cd -
 end
 
-paru -S --needed --noconfirm hyprshot tofi
+paru -S --needed --noconfirm hyprshot tofi neofetch
 
 mkdir -p ~/.config ~/Imagens
 cp -r ~/desktop/.config/* ~/.config/
