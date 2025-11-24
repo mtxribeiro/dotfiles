@@ -7,7 +7,7 @@ set codecs_pkgs gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-
 set toolkits_pkgs gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland
 set xdg_pkgs xdg-desktop-portal-hyprland xdg-user-dirs
 set gnome_pkgs polkit-gnome gnome-keyring gvfs
-set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd
+set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome
 set media_pkgs mpv imv ffmpeg pavucontrol
 set tools_pkgs base-devel zip unzip unrar vim flatpak
 set gui_pkgs hyprland hyprpaper waybar materia-gtk-theme
