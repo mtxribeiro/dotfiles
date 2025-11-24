@@ -1,10 +1,15 @@
 {
-  "position": "bottom",
+  "position": "top",
 
   "modules-left": ["hyprland/workspaces",],
-  "modules-right": ["tray", "pulseaudio", "network", "clock"],
+  "modules-center":["clock"],
+  "modules-right": ["tray", "pulseaudio", "network",],
 
-  "workspaces": {
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "󰄯"
+    }
   },
 
  "pulseaudio": {
@@ -21,13 +26,13 @@
  "network": {
     "tooltip": false,
     "format-wifi": "",
-    "format-ethernet": "",
+    "format-ethernet": "",
     "format-disconnected": "",
   },
 
   "clock": {
     "tooltip": false,
-    "format": "{:%d %b %H:%M}",
+    "format": "{:%d %B %H:%M}",
   },
 
   "tray": {
