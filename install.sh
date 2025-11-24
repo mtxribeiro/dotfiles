@@ -10,7 +10,7 @@ set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome
 set media_pkgs mpv imv ffmpeg pavucontrol
 set tools_pkgs base-devel zip unzip unrar vim flatpak
-set gui_pkgs hyprland hyprpaper waybar materia-gtk-theme
+set gui_pkgs hyprland hyprpaper waybar rofi materia-gtk-theme
 set softwares_pkgs firefox alacritty pcmanfm
 
 sudo pacman -S --needed --noconfirm \
@@ -22,7 +22,7 @@ if not type -q paru
     cd /tmp/paru; makepkg -si --noconfirm; cd -
 end
 
-paru -S --needed --noconfirm hyprshot tofi neofetch
+paru -S --needed --noconfirm hyprshot neofetch
 
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
