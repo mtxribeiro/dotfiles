@@ -11,8 +11,8 @@
     hlt-color: #121212FF;
     alt-color: transparent;
     wbg-color: #121212CC;
-    w-border: 0px solid;
-    w-border-color: #121212FF;
+    w-border: 1px solid;
+    w-border-color: #808080FF;
     w-padding: 12px;
 }
 
