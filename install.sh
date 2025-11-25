@@ -10,7 +10,7 @@ set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd
 set media_pkgs mpv imv ffmpeg pavucontrol
 set tools_pkgs base-devel zip unzip unrar vim flatpak
-set gui_pkgs hyprland hyprpaper waybar rofi materia-gtk-theme
+set gui_pkgs hyprland hyprpaper hyprlock waybar rofi materia-gtk-theme
 set softwares_pkgs firefox alacritty pcmanfm
 
 sudo pacman -S --needed --noconfirm \
