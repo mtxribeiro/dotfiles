@@ -6,7 +6,7 @@ dynamic_padding = false
 opacity = 1
 
 [window.padding]
-x = 3
+x = 8
 y = 10
 
 [colors.primary]
