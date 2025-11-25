@@ -8,6 +8,6 @@
 1. sudo pacman -S git fish  
 2. chsh -s /bin/fish  
 3. fish  
-4. git clone https://github.com/mtxribeiro/dotfiles.git  
+4. git clone https://github.com/mtxribeiro/dotfiles  
 5. cd ~/dotfiles  
 6. ./install.sh
