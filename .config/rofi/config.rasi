@@ -1,30 +1,25 @@
 * {
     font: "Awesome 12";
-
     g-spacing: 10px;
     g-margin: 0;
-    g-padding: 8px;
-
     b-color: #121212FF;
     fg-color: #FFFFFFFF;
     fgp-color: #808080FF;
-
+    b-radius: 5px;
+    g-padding: 8px;
     hl-color: transparent;
     hlt-color: #FFFFFFFF;
     alt-color: transparent;
-
     wbg-color: #121212CC;
     w-border: 0px solid;
-    w-border-color: #808080FF;
+    w-border-color: #FFFFFFFF;
     w-padding: 12px;
-
-    b-radius: 5px;
 }
 
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: " ";
+    display-drun: "";
 }
 
 listview {
@@ -81,25 +76,26 @@ element {
 }
 
 element normal.normal {
-    background-color: transparent;
-    text-color: @fg-color;
+	background-color: transparent;
+	text-color: @fg-color;
 }
 
 element alternate.normal {
-    background-color: @alt-color;
-    text-color: @fg-color;
+	background-color: @alt-color;
+	text-color: @fg-color;
 }
 
 element selected.active {
-    background-color: @hl-color;
-    text-color: @hlt-color;
+	background-color: @hl-color;
+	text-color: @hlt-color;
 }
 
 element selected.normal {
-    background-color: @hl-color;
-    text-color: @hlt-color;
+	background-color: @hl-color;
+	text-color: @hlt-color;
 }
 
 message {
+    background-color: red;
     border: 0px solid;
 }
