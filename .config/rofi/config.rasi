@@ -101,6 +101,5 @@ element selected.normal {
 }
 
 message {
-    background-color: red;
     border: 0px solid;
 }
