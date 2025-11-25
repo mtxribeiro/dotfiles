@@ -5,13 +5,13 @@
     b-color: #121212FF;
     fg-color: #FFFFFFFF;
     fgp-color: #808080FF;
-    b-radius: 0px;
+    b-radius: 5px;
     g-padding: 8px;
     hl-color: transparent;
     hlt-color: #FFFFFFFF;
     alt-color: transparent;
     wbg-color: #121212CC;
-    w-border: 1px solid;
+    w-border: 0px solid;
     w-border-color: #808080FF;
     w-padding: 12px;
 }
