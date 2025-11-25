@@ -3,15 +3,11 @@ window {
 }
 
 #outer-box {
-	margin: 0px
 }
 
 #inner-box {
 	background-color: rgba (18, 18, 18, 0.95);
 	border-radius: 5px;
-	border-style: none;
-	border-width: 1px;
-	border-color: rgba (156, 142, 122, 0.7);
 	padding: 5px;
 	margin: 5px
 }
