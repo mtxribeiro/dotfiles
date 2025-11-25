@@ -11,7 +11,7 @@ set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jet
 set media_pkgs mpv imv ffmpeg pavucontrol
 set tools_pkgs base-devel zip unzip unrar vim flatpak
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar materia-gtk-theme
-set softwares_pkgs firefox alacritty pcmanfm
+set softwares_pkgs firefox alacritty pcmanfm mousepad
 
 sudo pacman -S --needed --noconfirm \
 	$audio_pkgs $codecs_pkgs $toolkits_pkgs $xdg_pkgs $gnome_pkgs \
