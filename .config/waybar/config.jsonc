@@ -1,14 +1,14 @@
 {
   "position": "top",
 
-  "modules-left": ["hyprland/workspaces",],
-  "modules-center":["clock"],
-  "modules-right": ["tray", "pulseaudio", "network",],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "network", "custom/power"],
 
   "hyprland/workspaces": {
   },
 
- "pulseaudio": {
+  "pulseaudio": {
     "tooltip": false,
     "format": "{icon}",
     "format-muted": "",
@@ -19,20 +19,25 @@
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
 
- "network": {
+  "network": {
     "tooltip": false,
     "format-wifi": "",
     "format-ethernet": "",
-    "format-disconnected": "",
+    "format-disconnected": ""
   },
 
   "clock": {
     "tooltip": false,
-    "format": "{:%d %B %H:%M}",
+    "format": "{:%d %B %H:%M}"
   },
 
   "tray": {
     "icon-size": 14,
-    "spacing": 8,
+    "spacing": 8
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "systemctl poweroff"
   }
 }
