@@ -6,10 +6,6 @@
   "modules-right": ["tray", "pulseaudio", "network",],
 
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "default": "󰄯"
-    }
   },
 
  "pulseaudio": {
