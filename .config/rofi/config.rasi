@@ -99,3 +99,8 @@ element selected.normal {
     background-color: @hl-color;
     text-color: @hlt-color;
 }
+
+message {
+    background-color: red;
+    border: 0px solid;
+}
