@@ -27,7 +27,6 @@ paru -S --needed --noconfirm hyprshot neofetch
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
-
 xdg-user-dirs-update
 
 sudo pacman -Scc --noconfirm
