@@ -36,6 +36,4 @@ if test -n "$orphans"
     sudo pacman -Rns $orphans
 end
 
-set -U fish_greeting
-
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
