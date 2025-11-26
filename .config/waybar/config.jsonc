@@ -27,7 +27,7 @@
   },
 
   "custom/date": {
-    "exec": "LANG=pt_BR.UTF-8 date '+%d de %B %H:%M'",
+    "exec": "date '+%d de %B %H:%M'",
   "interval": 60,
   "tooltip": false
   },
