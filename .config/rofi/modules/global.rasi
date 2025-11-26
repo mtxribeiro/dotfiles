@@ -18,4 +18,5 @@
     alt-color: transparent;
     wbg-color: #121212CC;
     w-border-color: #FFFFFFFF;
+    foreground: #FFFFFFFF;
 }
