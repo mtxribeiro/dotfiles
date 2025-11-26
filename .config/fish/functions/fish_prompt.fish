@@ -44,7 +44,6 @@ function fish_prompt --description 'Write out the prompt'
                 set suffix '❯'
         end
     
-        # PWD
         set_color white
         echo -n (prompt_pwd)
         set_color normal
