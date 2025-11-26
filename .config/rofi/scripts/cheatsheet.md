@@ -7,7 +7,7 @@
    + R    Recarregar configurações
    + Q    Fechar janela
    + W    Alternar janela flutuante
-   + ALT    Alternar split vertical/horizontal
+   + ALT    Alternar split
    + F    Alternar janela fixa
    +  󰘶  + F    Alternar tela cheia
    +  󰘶  + S    Captura de tela (Clipboard)
