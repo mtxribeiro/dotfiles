@@ -25,8 +25,6 @@ end
 
 paru -S --needed --noconfirm hyprshot neofetch
 
-curl -sS https://starship.rs/install.sh | sh
-
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
