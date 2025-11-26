@@ -1,0 +1,21 @@
+// GLOBAL
+
+* {
+    font: "Awesome 12";
+
+    g-spacing: 10px;
+    g-margin: 0;
+    g-padding: 8px;
+    b-radius: 5px;
+    w-border: 0px solid;
+    w-padding: 12px;
+
+    b-color: #121212FF;
+    fg-color: #FFFFFFFF;
+    fgp-color: #808080FF;
+    hl-color: transparent;
+    hlt-color: #FFFFFFFF;
+    alt-color: transparent;
+    wbg-color: #121212CC;
+    w-border-color: #FFFFFFFF;
+}

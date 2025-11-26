@@ -1,0 +1,7 @@
+// ENTRY
+
+entry {
+    placeholder: "Search";
+    text-color: @fg-color;
+    placeholder-color: @fgp-color;
+}
