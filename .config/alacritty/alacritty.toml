@@ -7,7 +7,7 @@ opacity = 1
 
 [window.padding]
 x = 10
-y = 0
+y = 10
 
 [colors.primary]
 background = "0x121212"
