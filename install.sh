@@ -8,8 +8,8 @@ set toolkits_pkgs gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland
 set xdg_pkgs xdg-desktop-portal-hyprland xdg-user-dirs
 set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome ttf-jetbrains-mono-nerd
-set media_pkgs mpv imv ffmpeg pavucontrol
-set tools_pkgs base-devel flatpak curl wget zip unzip unrar zoxide vim
+set media_pkgs mpv imv pavucontrol
+set tools_pkgs base-devel flatpak zip unzip unrar zoxide vim
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar
 set theme_pkgs materia-gtk-theme papirus-icon-theme
 set softwares_pkgs firefox alacritty pcmanfm
