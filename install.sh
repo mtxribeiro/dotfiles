@@ -12,7 +12,7 @@ set media_pkgs mpv imv pavucontrol
 set tools_pkgs base-devel flatpak zip unzip unrar zoxide vim
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar
 set theme_pkgs materia-gtk-theme papirus-icon-theme
-set softwares_pkgs firefox alacritty pcmanfm
+set softwares_pkgs firefox kitty pcmanfm
 
 sudo pacman -S --needed --noconfirm \
 	$audio_pkgs $codecs_pkgs $toolkits_pkgs $xdg_pkgs $gnome_pkgs \
