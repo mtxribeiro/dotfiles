@@ -2,7 +2,7 @@
   "position": "top",
 
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
+  "modules-center": ["custom/date"],
   "modules-right": ["tray", "pulseaudio", "network", "custom/power"],
 
   "hyprland/workspaces": {
@@ -26,9 +26,10 @@
     "format-disconnected": ""
   },
 
-  "clock": {
-    "tooltip": false,
-    "format": "{:%d %B %H:%M}"
+  "custom/date": {
+    "exec": "LANG=pt_BR.UTF-8 date '+%d de %B %H:%M'",
+  "interval": 60,
+  "tooltip": false
   },
 
   "tray": {
