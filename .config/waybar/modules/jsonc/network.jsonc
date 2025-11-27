@@ -1,0 +1,10 @@
+// NETWORK
+
+{
+  "network": {
+    "tooltip": false,
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": ""
+  }
+}
