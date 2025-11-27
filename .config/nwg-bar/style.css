@@ -1,12 +1,9 @@
 window {
-        background-color: rgba (0, 0, 0, 0.0)
-}
-
-#outer-box {
+    background-color: rgba (0, 0, 0, 0.0)
 }
 
 #inner-box {
-	background-color: rgba (18, 18, 18, 0.95);
+	background-color: rgba (18, 18, 18, 1);
 	border-radius: 5px;
 	padding: 5px;
 	margin: 5px
