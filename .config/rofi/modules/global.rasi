@@ -1,7 +1,7 @@
 // GLOBAL
 
 * {
-    font: "Awesome 12";
+    font: "Noto Sans 12";
 
     g-spacing: 10px;
     g-margin: 0;
