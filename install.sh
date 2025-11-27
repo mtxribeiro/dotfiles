@@ -17,24 +17,22 @@ set pkgs \
 
 if not type -q paru
     git clone https://aur.archlinux.org/paru.git /tmp/paru
-    cd /tmp/paru; makepkg -si --noconfirm; cd -
+    cd /tmp/paru; makepkg -si --noconfirm
+    cd -
 end
 
 sudo pacman -S --needed --noconfirm $pkgs
-
 paru -S --needed --noconfirm hyprshot
 
 mkdir -p ~/.config ~/Imagens
-cp -r ~/dotfiles/.config/* ~/.config/
-cp -r ~/dotfiles/Wallpapers ~/Imagens/
+rsync -a ~/dotfiles/.config/ ~/.config/
+rsync -a ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
 
 set -U fish_greeting
 
 sudo pacman -Scc --noconfirm
 set orphans (pacman -Qdtq)
-if test -n "$orphans"
-    sudo pacman -Rns $orphans
-end
+test -n "$orphans"; and sudo pacman -Rns $orphans
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
