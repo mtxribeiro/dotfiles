@@ -16,8 +16,8 @@ set pkgs \
     firefox kitty pcmanfm
 
 if not type -q paru
-    git clone https://aur.archlinux.org/paru.git /tmp/paru
-    cd /tmp/paru; makepkg -si --noconfirm
+    git clone https://aur.archlinux.org/paru-bin.git /tmp/paru-bin
+    cd /tmp/paru-bin; makepkg -si --noconfirm
     cd -
 end
 
