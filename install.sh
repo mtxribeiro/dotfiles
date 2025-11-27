@@ -10,7 +10,7 @@ set pkgs \
     polkit-gnome gnome-keyring gvfs \
     noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd \
     mpv imv pavucontrol \
-    base-devel flatpak curl zip unzip unrar zoxide fzf eza neovim \
+    base-devel flatpak curl zip unzip unrar zoxide fzf eza neovim fastfetch \
     hyprland hyprpaper hyprlock waybar rofi nwg-bar \
     materia-gtk-theme papirus-icon-theme \
     firefox kitty pcmanfm
@@ -22,7 +22,7 @@ end
 
 sudo pacman -S --needed --noconfirm $pkgs
 
-paru -S --needed --noconfirm hyprshot neofetch
+paru -S --needed --noconfirm hyprshot
 
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
