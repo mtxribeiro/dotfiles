@@ -11,12 +11,12 @@ set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-fon
 set media_pkgs mpv imv pavucontrol
 set tools_pkgs base-devel flatpak curl zip unzip unrar zoxide fzf eza neovim
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar
-set appearance_pkgs materia-gtk-theme papirus-icon-theme
+set themes_pkgs materia-gtk-theme papirus-icon-theme
 set softwares_pkgs firefox kitty pcmanfm
 
 sudo pacman -S --needed --noconfirm \
 	$audio_pkgs $codecs_pkgs $toolkits_pkgs $xdg_pkgs $gnome_pkgs \
-	$fonts_pkgs $media_pkgs $tools_pkgs $gui_pkgs $softwares_pkgs $appearance_pkgs
+	$fonts_pkgs $media_pkgs $tools_pkgs $gui_pkgs $softwares_pkgs $themes_pkgs
 
 if not type -q paru
     git clone https://aur.archlinux.org/paru.git /tmp/paru
