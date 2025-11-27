@@ -9,7 +9,7 @@ set xdg_pkgs xdg-desktop-portal-hyprland xdg-user-dirs
 set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome ttf-jetbrains-mono-nerd
 set media_pkgs mpv imv pavucontrol
-set tools_pkgs base-devel flatpak zip unzip unrar zoxide fzf neovim
+set tools_pkgs base-devel flatpak curl zip unzip unrar zoxide fzf neovim
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar
 set theme_pkgs materia-gtk-theme papirus-icon-theme
 set softwares_pkgs firefox kitty pcmanfm
@@ -30,12 +30,13 @@ cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
 
+set -U fish_greeting
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
 sudo pacman -Scc --noconfirm
 set orphans (pacman -Qdtq)
 if test -n "$orphans"
     sudo pacman -Rns $orphans
 end
-
-set -U fish_greeting
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
