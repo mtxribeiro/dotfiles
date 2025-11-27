@@ -25,18 +25,19 @@ end
 
 paru -S --needed --noconfirm hyprshot neofetch
 
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
-
-set -U fish_greeting
-curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 sudo pacman -Scc --noconfirm
 set orphans (pacman -Qdtq)
 if test -n "$orphans"
     sudo pacman -Rns $orphans
 end
+
+set -U fish_greeting
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
