@@ -24,8 +24,6 @@ sudo pacman -S --needed --noconfirm $pkgs
 
 paru -S --needed --noconfirm hyprshot
 
-curl -sS https://starship.rs/install.sh | sh -s -- -y
-
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
