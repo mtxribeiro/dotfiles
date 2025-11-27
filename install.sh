@@ -9,7 +9,7 @@ set xdg_pkgs xdg-desktop-portal-hyprland xdg-user-dirs
 set gnome_pkgs polkit-gnome gnome-keyring gvfs
 set fonts_pkgs noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome ttf-jetbrains-mono-nerd
 set media_pkgs mpv imv pavucontrol
-set tools_pkgs base-devel flatpak zip unzip unrar zoxide vim
+set tools_pkgs base-devel flatpak zip unzip unrar zoxide fzf neovim
 set gui_pkgs hyprland hyprpaper hyprlock waybar rofi nwg-bar
 set theme_pkgs materia-gtk-theme papirus-icon-theme
 set softwares_pkgs firefox kitty pcmanfm
