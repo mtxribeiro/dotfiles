@@ -8,7 +8,7 @@ set pkgs \
     gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland \
     xdg-desktop-portal-hyprland xdg-user-dirs \
     polkit-gnome gnome-keyring gvfs \
-    noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-font-awesome ttf-jetbrains-mono-nerd \
+    noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd \
     mpv imv pavucontrol \
     base-devel flatpak curl zip unzip unrar zoxide fzf eza neovim \
     hyprland hyprpaper hyprlock waybar rofi nwg-bar \
