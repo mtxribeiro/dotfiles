@@ -16,7 +16,7 @@ set softwares_pkgs firefox kitty pcmanfm
 
 sudo pacman -S --needed --noconfirm \
 	$audio_pkgs $codecs_pkgs $toolkits_pkgs $xdg_pkgs $gnome_pkgs \
-	$fonts_pkgs $media_pkgs $tools_pkgs $gui_pkgs $softwares_pkgs $themes_pkgs
+	$fonts_pkgs $media_pkgs $tools_pkgs $gui_pkgs $themes_pkgs $softwares_pkgs
 
 if not type -q paru
     git clone https://aur.archlinux.org/paru.git /tmp/paru
