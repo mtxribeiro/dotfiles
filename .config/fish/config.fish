@@ -3,7 +3,7 @@ if test -z "$DISPLAY"; and test (tty) = "/dev/tty1"
 end
 
 if status is-interactive
-  zoxide init fish | source
   starship init fish | source
+  zoxide init fish | source
   neofetch
 end
