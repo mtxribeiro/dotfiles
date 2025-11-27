@@ -1,7 +1,7 @@
 // ENTRY
 
 entry {
-    placeholder: "Search";
+    placeholder: "";
     text-color: @fg-color;
     placeholder-color: @fgp-color;
 }
