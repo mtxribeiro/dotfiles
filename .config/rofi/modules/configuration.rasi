@@ -3,5 +3,5 @@
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: " ";
+    display-drun: "  ";
 }
