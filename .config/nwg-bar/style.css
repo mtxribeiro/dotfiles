@@ -23,5 +23,10 @@ button {
 }
 
 button:hover {
-	background-color: rgba (50, 50, 50, 0.5)
+	background-color: rgba (50, 50, 50, 0.2)
+}
+
+button:focus {
+    background-color: rgba (50, 50, 50, 0.4);
+    color: #ffffff;
 }
