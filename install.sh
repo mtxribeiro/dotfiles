@@ -25,8 +25,8 @@ sudo pacman -S --needed --noconfirm $pkgs
 paru -S --needed --noconfirm hyprshot
 
 mkdir -p ~/.config ~/Imagens
-rsync -a ~/dotfiles/.config/ ~/.config/
-rsync -a ~/dotfiles/Wallpapers ~/Imagens/
+cp -r ~/dotfiles/.config/* ~/.config/
+cp -r ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
 
 set -U fish_greeting
