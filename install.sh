@@ -11,7 +11,7 @@ sudo pacman -S --needed --noconfirm \
     polkit-gnome gnome-keyring gvfs \
     noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd \
     base-devel flatpak zip unzip unrar vim \
-    hyprland hyprpaper hyprlock waybar rofi nwg-bar \
+    hyprland hyprpaper hyprlock waybar rofi \
     materia-gtk-theme papirus-icon-theme \
     firefox alacritty pcmanfm
     
