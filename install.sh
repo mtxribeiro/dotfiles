@@ -27,6 +27,7 @@ paru -S --needed --noconfirm hyprshot
 mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
+cp ~/dotfiles/.bashrc ~/.bashrc
 xdg-user-dirs-update
 
 sudo pacman -Scc --noconfirm
