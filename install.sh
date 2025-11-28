@@ -13,7 +13,7 @@ set pkgs \
     base-devel flatpak zip unzip unrar zoxide fzf neovim \
     hyprland hyprpaper hyprlock waybar rofi nwg-bar \
     materia-gtk-theme papirus-icon-theme \
-    firefox kitty pcmanfm
+    firefox alacritty pcmanfm
 
 if not type -q paru
     git clone https://aur.archlinux.org/paru-bin.git /tmp/paru-bin
@@ -28,8 +28,6 @@ mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
-
-set -U fish_greeting
 
 sudo pacman -Scc --noconfirm
 set orphans (pacman -Qdtq)
