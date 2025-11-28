@@ -1,0 +1,10 @@
+# MODULES
+
+[general]
+import = [
+  "modules/shell.toml",
+  "modules/env.toml",
+  "modules/window.toml",
+  "modules/colors.toml",
+  "modules/fonts.toml"
+  ]
