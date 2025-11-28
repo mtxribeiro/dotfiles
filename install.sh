@@ -28,6 +28,7 @@ mkdir -p ~/.config ~/Imagens
 cp -r ~/dotfiles/.config/* ~/.config/
 cp -r ~/dotfiles/Wallpapers ~/Imagens/
 cp ~/dotfiles/.bashrc ~/.bashrc
+cp ~/dotfiles/.bash_profile ~/.bash_profile
 xdg-user-dirs-update
 
 sudo pacman -Scc --noconfirm
