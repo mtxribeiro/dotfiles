@@ -4,6 +4,6 @@
   "custom/power": {
     "tooltip": false,
     "format": "",
-    "on-click": "nwg-bar"
+    "on-click": "systemctl poweroff"
   }
 }
