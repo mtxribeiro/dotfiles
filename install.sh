@@ -1,8 +1,8 @@
-#!/usr/bin/env fish
+#!/bin/bash
 
 sudo pacman -Syu --noconfirm
 
-set pkgs \
+sudo pacman -S --needed --noconfirm \
     pipewire-audio \
     gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
     gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland \
@@ -15,13 +15,13 @@ set pkgs \
     materia-gtk-theme papirus-icon-theme \
     firefox alacritty pcmanfm
 
-if not type -q paru
+if ! command -v paru >/dev/null 2>&1; then
     git clone https://aur.archlinux.org/paru-bin.git /tmp/paru-bin
-    cd /tmp/paru-bin; makepkg -si --noconfirm
+    cd /tmp/paru-bin
+    makepkg -si --noconfirm
     cd -
-end
+fi
 
-sudo pacman -S --needed --noconfirm $pkgs
 paru -S --needed --noconfirm hyprshot
 
 mkdir -p ~/.config ~/Imagens
@@ -30,7 +30,10 @@ cp -r ~/dotfiles/Wallpapers ~/Imagens/
 xdg-user-dirs-update
 
 sudo pacman -Scc --noconfirm
-set orphans (pacman -Qdtq)
-test -n "$orphans"; and sudo pacman -Rns $orphans
+
+orphans=$(pacman -Qdtq || true)
+if [[ -n "$orphans" ]]; then
+    sudo pacman -Rns --noconfirm $orphans
+fi
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
