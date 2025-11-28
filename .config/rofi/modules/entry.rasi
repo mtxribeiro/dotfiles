@@ -1,7 +1,0 @@
-// ENTRY
-
-entry {
-    placeholder: "";
-    text-color: @fg-color;
-    placeholder-color: @fgp-color;
-}

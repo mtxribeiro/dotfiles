@@ -1,6 +1,0 @@
-// INPUTBAR
-
-inputbar {
-    children: ["prompt", "entry"];
-    spacing: @g-spacing;
-}
