@@ -1,0 +1,24 @@
+// GLOBAL
+
+* {
+    font: "Noto Sans 12";
+
+    g-spacing: 10px;
+    g-margin: 0;
+    g-padding: 10px;
+    b-radius: 5px;
+    w-border: 0px solid;
+    w-padding: 12px;
+
+    b-color: #121212FF;
+    fg-color: #C0C0C0FF;
+    fg-color2: #C0C0C055;
+    fgp-color: #808080FF;
+    hl-color: transparent;
+    hlt-color: #FFFFFFFF;
+    alt-color: transparent;
+    wbg-color: #121212CC;
+    wbg-color2: #3F3F3F55;
+    w-border-color: #FFFFFFFF;
+    foreground: #FFFFFFFF;
+}
