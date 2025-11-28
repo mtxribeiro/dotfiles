@@ -4,6 +4,6 @@
   "custom/power": {
     "tooltip": false,
     "format": "",
-    "on-click": "sudo systemctl poweroff"
+    "on-click": "systemctl poweroff"
   }
 }
