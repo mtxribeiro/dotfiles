@@ -1,0 +1,35 @@
+// MODULES
+{
+  "position": "top",
+  "spacing": 0,
+  "reload_style_on_change": true,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/date"],
+  "modules-right": ["tray", "pulseaudio", "network", "group/group-power"],
+
+  "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-power",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",   // líder, sempre visível
+      "custom/lock",
+      "custom/reboot"
+    ]
+  },
+
+  "include": [
+    "modules/jsonc/workspaces.jsonc",
+    "modules/jsonc/pulseaudio.jsonc",
+    "modules/jsonc/network.jsonc",
+    "modules/jsonc/tray.jsonc",
+    "modules/jsonc/date.jsonc",
+    "modules/jsonc/lock.jsonc",
+    "modules/jsonc/reboot.jsonc",
+    "modules/jsonc/power.jsonc"
+  ]
+}
