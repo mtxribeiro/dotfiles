@@ -16,7 +16,7 @@
       "transition-left-to-right": false
     },
     "modules": [
-      "custom/power",   // líder, sempre visível
+      "custom/power",
       "custom/lock",
       "custom/reboot"
     ]
