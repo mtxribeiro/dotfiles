@@ -1,0 +1,6 @@
+// MESSAGE
+
+message {
+    background-color: red;
+    border: 0px solid;
+}

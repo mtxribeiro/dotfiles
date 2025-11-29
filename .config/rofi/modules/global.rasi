@@ -1,0 +1,5 @@
+// GLOBAL
+
+* {
+    font: "Noto Sans 12";
+}
