@@ -18,7 +18,7 @@ sudo pacman -S --needed --noconfirm \
 o=""
 while [[ "$o" != 1 && "$o" != 2 ]]; do
     printf ":: Existem 2 opções disponíveis para AUR helper:\n"
-    printf " 1) paru   2) yay\n\n"
+    printf "   1) paru   2) yay\n\n"
     read -rp "Digite um número (default=1): " o
     o=${o:-1}
 done
