@@ -10,7 +10,9 @@ alias lla='ls -la'
 alias ..='cd ..'
 
 alias cp='cp -r'
+
 alias rm='rm -r'
+alias rmf='rm -rf'
 
 alias cl='clear'
 
