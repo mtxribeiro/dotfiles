@@ -5,6 +5,7 @@
     "tooltip": false,
     "format-wifi": "",
     "format-ethernet": "",
-    "format-disconnected": ""
+    "format-disconnected": "",
+    "on-click": "hyprctl dispatch exec '[float; size 750 500; center] alacritty -e nmtui'"
   }
 }
