@@ -1,9 +1,0 @@
-// REBOOT
-
-{
-  "custom/lock": {
-    "tooltip": false,
-    "format": "",
-    "on-click": "hyprlock"
-  }
-}
