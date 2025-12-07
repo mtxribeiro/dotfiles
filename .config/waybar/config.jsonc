@@ -1,0 +1,47 @@
+// MODULES
+
+{
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/date"],
+  "modules-right": ["group/group-tray", "pulseaudio", "network", "group/group-power"],
+
+  "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "not-power",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/reboot"
+    ]
+  },
+
+  "group/group-tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "not-tray",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/tray-expander",
+      "tray"
+    ]
+  },
+
+  "include": [
+    "modules/jsonc/workspaces.jsonc",
+    "modules/jsonc/pulseaudio.jsonc",
+    "modules/jsonc/network.jsonc",
+    "modules/jsonc/tray.jsonc",
+    "modules/jsonc/date.jsonc",
+    "modules/jsonc/lock.jsonc",
+    "modules/jsonc/reboot.jsonc",
+    "modules/jsonc/power.jsonc",
+    "modules/jsonc/tray-expander.jsonc"
+  ]
+}
+
