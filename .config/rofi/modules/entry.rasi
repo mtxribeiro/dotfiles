@@ -1,0 +1,12 @@
+// ENTRY
+
+entry {
+    placeholder: "";
+    text-color: #C0C0C0FF;
+    placeholder-color: #80808055;
+    background-color: #3F3F3F55;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px;
+    border-color: #C0C0C055;
+}

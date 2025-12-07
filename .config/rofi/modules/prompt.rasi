@@ -1,0 +1,5 @@
+// PROMPT
+
+prompt {
+    text-color: #C0C0C0FF;
+}
