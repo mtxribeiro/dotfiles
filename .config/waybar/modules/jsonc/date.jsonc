@@ -1,9 +1,0 @@
-// DATE
-
-{
-  "custom/date": {
-    "exec": "date '+%d de %B %H:%M'",
-  "interval": 60,
-  "tooltip": false
-  }
-}
