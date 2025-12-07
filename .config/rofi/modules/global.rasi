@@ -1,6 +1,0 @@
-// GLOBAL
-
-* {
-    font: "Noto Sans 12";
-    highlight: bold;
-}
