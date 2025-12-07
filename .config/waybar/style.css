@@ -1,0 +1,11 @@
+/* MODULES */
+
+@import "modules/css/global.css";
+@import "modules/css/waybar.css";
+@import "modules/css/modules.css";
+@import "modules/css/workspaces.css";
+@import "modules/css/network.css";
+@import "modules/css/pulseaudio.css";
+@import "modules/css/tray.css";
+@import "modules/css/tray-expander.css";
+@import "modules/css/power.css";
