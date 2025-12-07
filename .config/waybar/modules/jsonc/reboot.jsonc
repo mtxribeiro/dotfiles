@@ -1,0 +1,9 @@
+// REBOOT
+
+{
+  "custom/reboot": {
+    "tooltip": false,
+    "format": "",
+    "on-click": "systemctl reboot"
+  }
+}
