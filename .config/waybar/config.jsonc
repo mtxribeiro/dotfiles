@@ -1,0 +1,30 @@
+// MODULES
+
+{
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/date"],
+  "modules-right": ["group/group-tray", "pulseaudio", "network", "custom/power"],
+
+  "group/group-tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-tray",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/tray-expander",
+      "tray"
+    ]
+  },
+
+  "include": [
+    "modules/jsonc/workspaces.jsonc",
+    "modules/jsonc/pulseaudio.jsonc",
+    "modules/jsonc/network.jsonc",
+    "modules/jsonc/tray.jsonc",
+    "modules/jsonc/date.jsonc",
+    "modules/jsonc/power.jsonc",
+    "modules/jsonc/tray-expander.jsonc"
+  ]
+}

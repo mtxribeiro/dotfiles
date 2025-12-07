@@ -1,0 +1,9 @@
+// POWER
+
+{
+  "custom/power": {
+    "tooltip": false,
+    "format": "",
+    "on-click": "nwg-bar"
+  }
+}
