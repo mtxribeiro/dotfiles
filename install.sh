@@ -3,7 +3,7 @@
 sudo pacman -Syu --noconfirm
 
 sudo pacman -S --needed --noconfirm \
-    pipewire-audio wiremix \
+    pipewire-audio pavucontrol \
     gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
     gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland \
     xdg-desktop-portal-hyprland xdg-user-dirs \
