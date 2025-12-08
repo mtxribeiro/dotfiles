@@ -10,7 +10,7 @@ sudo pacman -S --needed --noconfirm \
     polkit-gnome gnome-keyring gvfs \
     noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd \
     base-devel flatpak zip unzip unrar mpv imv vim \
-    hyprland hyprpaper hyprlock waybar pavucontrol nm-connection-editor rofi \
+    ly hyprland hyprpaper hyprlock waybar pavucontrol nm-connection-editor rofi \
     materia-gtk-theme papirus-icon-theme \
     firefox alacritty pcmanfm
 
@@ -31,6 +31,8 @@ if ! command -v "$AUR_HELPER" &>/dev/null; then
 fi
 
 $AUR_HELPER -S --needed --noconfirm hyprshot
+
+sudo systemctl enable ly.service
 
 mkdir -p ~/.config ~/Imagens
 
