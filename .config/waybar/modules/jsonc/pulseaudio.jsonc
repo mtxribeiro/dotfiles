@@ -9,7 +9,7 @@
     "format-icons": {
       "default": ["", "", ""]
     },
-    "on-click": "hyprctl dispatch exec '[float; size 750 500; center] alacritty -e wiremix'",
+    "on-click": "hyprctl dispatch exec '[float; size 800 512; center] pavucontrol'",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   }
 }
