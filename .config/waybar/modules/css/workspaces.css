@@ -2,12 +2,15 @@
 
 #workspaces button {
     color: #B0B0B0;
+    transition: all 3s ease-in-out;
 }
 
 #workspaces button:hover {
     background: none;
+    transition: all 3s ease-in-out;
 }
 
 #workspaces button.active {
     color: #ffffff;
+    transition: all 3s ease-in-out;
 }
