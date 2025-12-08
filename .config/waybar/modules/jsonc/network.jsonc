@@ -6,6 +6,5 @@
     "format-wifi": "",
     "format-ethernet": "",
     "format-disconnected": "",
-    "on-click": "hyprctl dispatch exec '[float; size 800 512; center] nm-connection-editor'"
   }
 }
