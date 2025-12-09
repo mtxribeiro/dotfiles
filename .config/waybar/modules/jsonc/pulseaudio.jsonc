@@ -7,7 +7,7 @@
     "format": "{icon}",
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [""]
     },
     "on-click": "hyprctl dispatch exec '[float; size 800 512; center] pavucontrol'",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
