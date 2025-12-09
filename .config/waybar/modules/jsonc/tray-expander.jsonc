@@ -1,8 +1,10 @@
-// TRAY TOGGLE
+// TRAY EXPANDER
 
 {
   "custom/tray-expander": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
+    "on-scroll-up": "",
+    "on-scroll-down": 
   }
 }
