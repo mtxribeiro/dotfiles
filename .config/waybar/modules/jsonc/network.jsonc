@@ -3,7 +3,7 @@
 {
   "network": {
     "tooltip": false,
-    "format-wifi": "",
+    "format-wifi": " ",
     "format-ethernet": "",
     "format-disconnected": "",
   }
