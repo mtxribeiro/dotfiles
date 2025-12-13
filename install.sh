@@ -3,8 +3,8 @@
 sudo pacman -Syu --noconfirm
 
 sudo pacman -S --needed --noconfirm \
-    pipewire-audio pavucontrol \
-    gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav mpv imv \
+    pipewire-audio \
+    gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
     gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland \
     xdg-desktop-portal-hyprland xdg-user-dirs \
     polkit-gnome gnome-keyring gvfs \
@@ -12,7 +12,7 @@ sudo pacman -S --needed --noconfirm \
     base-devel flatpak zip unzip unrar vim \
     hyprland hyprpaper hyprlock hyprshot waybar rofi nwg-bar \
     materia-gtk-theme papirus-icon-theme \
-    firefox alacritty pcmanfm
+    firefox alacritty pcmanfm pavucontrol mpv imv
 
 o=""
 while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
