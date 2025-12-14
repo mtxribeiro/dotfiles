@@ -8,6 +8,7 @@
     "modules/jsonc/date.jsonc",
     "modules/jsonc/power.jsonc",
     "modules/jsonc/tray-expander.jsonc",
-    "modules/jsonc/modules.jsonc"
+    "modules/jsonc/modules.jsonc",
+    "modules/jsonc/groups.jsonc"
   ]
 }
