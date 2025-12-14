@@ -1,0 +1,20 @@
+// MODULES
+
+{
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/date"],
+  "modules-right": ["group/group-tray", "pulseaudio", "network", "custom/power"],
+
+  "group/group-tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 350,
+      "children-class": "not-tray",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/tray-expander",
+      "tray"
+    ]
+  }
+}
