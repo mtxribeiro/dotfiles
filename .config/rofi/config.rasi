@@ -1,4 +1,4 @@
-// MODULES
+// IMPORTS
 
 @import "modules/global.rasi"
 @import "modules/configuration.rasi"
