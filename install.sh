@@ -18,7 +18,7 @@ o=""
 while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
     printf ":: Existem 3 opções disponíveis para AUR helper:\n"
     printf "   1) paru  2) yay  3) nenhum\n\n"
-    read -rp "Digite um número (default=1): " o
+    read -rp "Digite um número (padrão=1): " o
     o=${o:-1}
 done
 
