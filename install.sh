@@ -26,7 +26,7 @@ AUR_HELPER=$([[ $o == 1 ]] && echo paru || ([[ $o == 2 ]] && echo yay))
 
 if ! command -v "$AUR_HELPER" &>/dev/null && [[ -n "$AUR_HELPER" ]]; then
     echo ":: Instalando $AUR_HELPER..."
-    git clone "https://aur.archlinux.org/${AUR_HELPER}-bin.git" /tmp/aurh
+    git clone "https://aur.archlinux.org/${AUR_HELPER}.git" /tmp/aurh
     cd /tmp/aurh && makepkg -si --noconfirm && cd -
 fi
 
