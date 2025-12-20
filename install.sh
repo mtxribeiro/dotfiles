@@ -12,7 +12,8 @@ sudo pacman -S --needed --noconfirm \
     base-devel flatpak zip unzip unrar vim \
     hyprland hyprpaper hyprlock hyprshot waybar rofi nwg-bar \
     materia-gtk-theme papirus-icon-theme \
-    firefox alacritty pcmanfm pavucontrol mpv imv
+    firefox alacritty pcmanfm pavucontrol mpv imv \
+    ufw
 
 o=""
 while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
@@ -29,6 +30,10 @@ if ! command -v "$AUR_HELPER" &>/dev/null && [[ -n "$AUR_HELPER" ]]; then
     git clone "https://aur.archlinux.org/${AUR_HELPER}.git" /tmp/aurh
     cd /tmp/aurh && makepkg -si --noconfirm && cd -
 fi
+
+sudo systemctl enable ufw
+sudo systemctl start ufw
+sudo ufw enable
 
 mkdir -p ~/.config ~/Imagens
 
