@@ -5,6 +5,6 @@
     "tooltip": false,
     "format-wifi": " ",
     "format-ethernet": "",
-    "format-disconnected": "",
+    "format-disconnected": ""
   }
 }
