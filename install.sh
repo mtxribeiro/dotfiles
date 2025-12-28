@@ -26,7 +26,11 @@ done
 if [[ "$s" == 1 ]]; then
     sudo pacman -S --needed --noconfirm fish
     chsh -s /usr/bin/fish
+    fish
     fish -c "set -U fish_greeting ''"
+elif [[ "$s" == 2 ]]; then
+    chsh -s /usr/bin/bash
+    bash
 fi
 
 o=""
