@@ -51,8 +51,6 @@ if [[ -n "$orphans" ]]; then
 fi
 
 chsh -s /bin/fish
+fish -c "set -U fish_greeting ''"
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
-
-fish
-set -U fish_greeting
