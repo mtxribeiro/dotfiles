@@ -16,20 +16,21 @@ sudo pacman -S --needed --noconfirm \
     firefox alacritty pcmanfm pavucontrol mpv imv \
     ufw
 
-o=""
-while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
-    printf ":: Existem 3 opções disponíveis para AUR helper:\n"
-    printf "   1) paru  2) yay  3) nenhum\n\n"
-    read -rp "Digite um número (padrão=1): " o
-    o=${o:-1}
-done
+if ! command -v yay &>/dev/null && ! command -v paru &>/dev/null; then
+    o=""
+    while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
+        printf ":: Existem 3 opções disponíveis para AUR helper:\n"
+        printf "   1) paru  2) yay  3) nenhum\n\n"
+        read -rp "Digite um número (padrão=1): " o
+        o=${o:-1}
+    done
 
-AUR_HELPER=$([[ $o == 1 ]] && echo paru || ([[ $o == 2 ]] && echo yay))
+    AUR_HELPER=$([[ $o == 1 ]] && echo paru || ([[ $o == 2 ]] && echo yay))
 
-if ! command -v "$AUR_HELPER" &>/dev/null && [[ -n "$AUR_HELPER" ]]; then
-    echo ":: Instalando $AUR_HELPER..."
-    git clone "https://aur.archlinux.org/${AUR_HELPER}.git" /tmp/aurh
-    cd /tmp/aurh && makepkg -si --noconfirm && cd -
+    if [[ -n "$AUR_HELPER" ]]; then
+        git clone "https://aur.archlinux.org/${AUR_HELPER}.git" /tmp/aurh
+        cd /tmp/aurh && makepkg -si --noconfirm && cd -
+    fi
 fi
 
 if [[ "$SHELL" == "/bin/bash" ]]; then
