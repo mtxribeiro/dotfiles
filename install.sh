@@ -32,8 +32,10 @@ if ! command -v "$AUR_HELPER" &>/dev/null && [[ -n "$AUR_HELPER" ]]; then
     cd /tmp/aurh && makepkg -si --noconfirm && cd -
 fi
 
-chsh -s /bin/fish
-fish -c "set -U fish_greeting ''"
+if [[ "$SHELL" == "/bin/bash" ]]; then
+    chsh -s /bin/fish
+    fish -c "set -U fish_greeting ''"
+fi
 
 sudo systemctl enable ufw
 sudo systemctl start ufw
