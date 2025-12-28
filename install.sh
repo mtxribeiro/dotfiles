@@ -32,6 +32,9 @@ if ! command -v "$AUR_HELPER" &>/dev/null && [[ -n "$AUR_HELPER" ]]; then
     cd /tmp/aurh && makepkg -si --noconfirm && cd -
 fi
 
+chsh -s /bin/fish
+fish -c "set -U fish_greeting ''"
+
 sudo systemctl enable ufw
 sudo systemctl start ufw
 sudo ufw enable
@@ -49,8 +52,5 @@ orphans=$(pacman -Qdtq || true)
 if [[ -n "$orphans" ]]; then
     sudo pacman -Rns --noconfirm $orphans
 fi
-
-chsh -s /bin/fish
-fish -c "set -U fish_greeting ''"
 
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
