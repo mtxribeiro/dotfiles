@@ -10,7 +10,7 @@ sudo pacman -S --needed --noconfirm \
     xdg-desktop-portal-hyprland xdg-user-dirs \
     polkit-gnome gnome-keyring gvfs \
     noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-jetbrains-mono-nerd \
-    base-devel flatpak zip unzip unrar vim \
+    base-devel flatpak zip unzip unrar vim zoxide \
     hyprland hyprpaper hyprlock hyprshot waybar rofi nwg-bar \
     materia-gtk-theme papirus-icon-theme \
     firefox alacritty pcmanfm pavucontrol mpv imv \
