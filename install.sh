@@ -33,7 +33,7 @@ if ! command -v yay &>/dev/null && ! command -v paru &>/dev/null; then
     fi
 fi
 
-if [[ "$SHELL" == "/bin/bash" ]]; then
+if [[ "$SHELL" != "/bin/fish" ]]; then
     chsh -s /bin/fish
     fish -c "set -U fish_greeting ''"
 fi
