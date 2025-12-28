@@ -37,9 +37,11 @@ if [[ "$SHELL" == "/bin/bash" ]]; then
     fish -c "set -U fish_greeting ''"
 fi
 
-sudo systemctl enable ufw
-sudo systemctl start ufw
-sudo ufw enable
+if ! systemctl is-enabled --quiet ufw && ! systemctl is-active --quiet ufw; then
+    sudo systemctl enable ufw
+    sudo systemctl start ufw
+    sudo ufw enable
+fi
 
 mkdir -p ~/.config ~/Imagens
 
