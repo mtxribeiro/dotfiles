@@ -1,16 +1,16 @@
 // GROUPS
-
 {
   "group/group-tray": {
     "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 350,
-      "children-class": "not-tray",
-      "transition-left-to-right": false
-    },
     "modules": [
       "custom/tray-expander",
       "tray"
-    ]
+    ],
+    "drawer": {
+      "children": ["tray"],
+      "click-to-reveal": true,
+      "transition-duration": 350,
+      "transition-left-to-right": false
+    }
   }
 }
