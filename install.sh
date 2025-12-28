@@ -15,6 +15,20 @@ sudo pacman -S --needed --noconfirm \
     firefox alacritty pcmanfm pavucontrol mpv imv \
     ufw
 
+s=""
+while [[ "$s" != 1 && "$s" != 2 ]]; do
+    printf ":: Existem 2 opções disponíveis para shell:\n"
+    printf "   1) fish  2) bash\n\n"
+    read -rp "Digite um número (padrão=1): " s
+    s=${s:-1}
+done
+
+if [[ "$s" == 1 ]]; then
+    sudo pacman -S --needed --noconfirm fish
+    chsh -s /usr/bin/fish
+    fish -c "set -U fish_greeting ''"
+fi
+
 o=""
 while [[ "$o" != 1 && "$o" != 2 && "$o" != 3 ]]; do
     printf ":: Existem 3 opções disponíveis para AUR helper:\n"
