@@ -3,6 +3,7 @@
 sudo pacman -Syu --noconfirm
 
 sudo pacman -S --needed --noconfirm \
+    fish \
     pipewire-audio \
     gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
     gtk3 gtk4 qt5-wayland qt6-wayland xorg-xwayland \
@@ -49,4 +50,9 @@ if [[ -n "$orphans" ]]; then
     sudo pacman -Rns --noconfirm $orphans
 fi
 
+chsh -s /bin/fish
+
 echo -e "\n\033[1;32mInstalação concluída. Reinicie o sistema.\033[0m"
+
+fish
+set -U fish_greeting
