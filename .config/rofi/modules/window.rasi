@@ -5,8 +5,8 @@ window {
     width: 620px;
     border-radius: 5px;
     background-color: #121212FF;
-    border: 0px solid;
-    border-color: #FFFFFFFF;
+    border: 1px solid;
+    border-color: #808080FF;
     padding: 12px;
     location: north;
     y-offset: 50;
