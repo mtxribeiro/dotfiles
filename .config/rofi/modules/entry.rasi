@@ -6,7 +6,7 @@ entry {
     placeholder-color: #80808055;
     background-color: #3F3F3F55;
     padding: 8px;
-    border-radius: 5px;
-    border: 2px;
+    border-radius: 10px;
+    border: 1px;
     border-color: #C0C0C055;
 }
