@@ -2,7 +2,7 @@
 
 {
   "custom/date": {
-    "exec": "date '+%d de %B %H:%M'",
+    "exec": "LC_TIME=pt_BR.UTF-8 date '+%d de %B %H:%M'",
   "interval": 60,
   "tooltip": false
   }
