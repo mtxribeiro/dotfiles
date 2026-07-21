@@ -1,12 +1,13 @@
 window {
-    background-color: rgba (0, 0, 0, 0.0)
+    background-color: rgba (128, 128, 128, 0.333);
+    border-radius: 4px
 }
 
 #inner-box {
 	background-color: rgba (18, 18, 18, 1);
 	border-radius: 5px;
-	padding: 5px;
-	margin: 5px
+	padding: 1px;
+	margin: 1px
 }
 
 button, image {
